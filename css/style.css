@@ -30,3 +30,32 @@ h1 {
     padding: 20px;
     font-size: 35px;
 }
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+a {
+    color: aliceblue;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: blueviolet;
+}
+
+.image-box {
+    margin: 10px;
+    flex: 1;
+}
+
+.text-box {
+    margin: 10px;
+    flex: 1;
+}
