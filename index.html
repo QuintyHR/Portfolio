@@ -10,19 +10,19 @@
 </head>
 <body>
     <header>
-        <nav class="flex items-center justify-between flex-wrap bg-gray-700 p-6">
+        <nav class="flex items-center justify-between flex-wrap p-6">
             <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
                 <div class="text-sm lg:flex-grow">
-                    <a id="about-button" href="#about" class="block mt-4 lg:inline-block lg:mt-0 text-gray-400 hover:text-white mr-4">
+                    <a id="about-button" href="#about" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-4">
                         Over mij
                     </a>
-                    <a id="study-button" href="#study" class="block mt-4 lg:inline-block lg:mt-0 text-gray-400 hover:text-white mr-4">
+                    <a id="study-button" href="#study" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-4">
                         Opleiding
                     </a>
-                    <a id="projects-button" href="#projects" class="block mt-4 lg:inline-block lg:mt-0 text-gray-400 hover:text-white mr-4">
+                    <a id="projects-button" href="#projects" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-4">
                         Projecten
                     </a>
-                    <a id="more-button" href="#more" class="block mt-4 lg:inline-block lg:mt-0 text-gray-400 hover:text-white">
+                    <a id="more-button" href="#more" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white">
                         Andere ervaring
                     </a>
                 </div>
@@ -69,8 +69,6 @@
                 Hieronder staan een paar van mijn projecten. Een paar hiervan staan ook online en hebben er dan ook een link eronder staan. 
             </p>
 
-        </br>
-
             <section>
                 <div class="box">
                     <div class="image-box">
@@ -90,10 +88,11 @@
                 </div>
             </section>
 
-        </br>
-
             <section>
                 <div class="box">
+                    <div class="image-box">
+                        <img src="./images/dragonGame.PNG">
+                    </div>
                     <div class="text-box">
                         <h2 class="text-2xl font-bold">Dragon Game</h2>
                         <p>
@@ -101,16 +100,14 @@
                         </p>
                         <a href="https://stud.hosted.hr.nl/1019766/Elemental-Dragons/docs/" target="_blank">Dragon Game</a>
                     </div>
-                    <div class="image-box">
-                        <img src="./images/dragonGame.PNG">
-                    </div>
                 </div>
             </section>
 
-        </br>
-
             <section>
                 <div class="box">
+                    <div class="image-box">
+                        <img src="./images/laravel.PNG">
+                    </div>
                     <div class="text-box">
                         <h2 class="text-2xl font-bold">Laravel</h2>
                         <p>
@@ -122,9 +119,6 @@
                             Voor deze opdracht heb ik een kleine character collection gemaakt van het spel League of Legends. 
                             Helaas kan ik deze website niet online zetten, omdat mijn enige database die ik heb momenteel gebruikt wordt voor de webshop opdracht, maar heb hier nog wel een screenshot van de website. 
                         </p>
-                    </div>
-                    <div class="image-box">
-                        <img src="./images/laravel.PNG">
                     </div>
                 </div>
             </section>
@@ -138,63 +132,89 @@
                     Hier heb ik zelf heel erg veel verschillende onderdelen in gehad en zal een link zetten naar elk onderdeel. 
                 </p>
 
-            </br>
-                <h3>Wel of geen mondkapje?</h3>
-                <p>
-                    Het eerste onderdeel wat ik gedaan heb is het trainen van AI met behulp van een camera (in dit geval een webcam).
-                    Dit heb ik gedaan met ML5. 
-                    Eenmaal op de pagina kan de AI getraind worden door de webcam een soort van foto's te maken. 
-                    Er kan op de knop "Draagt geen masker" worden geklikt om foto's te maken waarop de grbeuiker geen masker draagt.
-                    Vervolgens als de gebruiker een masker op heeft en dan een aantal keer op de knop "Draagt masker klikt", worden er ook foto's gemaakt wanneer de gebruiker wel een masker op heeft. 
-                    Vervolgens kan er op de knop "TRAIN" geklikt worden, zodat de AI getraind wordt. 
-                    De AI zal vervolgens in de zwarte balk aangeven of de gebruiker voor de camera nu wel of geen masker draagt.
-                </p>
-                <a href="https://quintyhr.github.io/Pro-8/Week%202%20Trainer/index.html" target="_blank">Draagt wel of geen mondkapje</a>
+                <div class="box">
+                    <div class="image-box">
+                        <img src="">
+                    </div>
+                    <div class="text-box">
+                        <h3>Wel of geen mondkapje?</h3>
+                        <p>
+                            Het eerste onderdeel wat ik gedaan heb is het trainen van AI met behulp van een camera (in dit geval een webcam).
+                            Dit heb ik gedaan met ML5. 
+                            Eenmaal op de pagina kan de AI getraind worden door de webcam een soort van foto's te maken. 
+                            Er kan op de knop "Draagt geen masker" worden geklikt om foto's te maken waarop de grbeuiker geen masker draagt.
+                            Vervolgens als de gebruiker een masker op heeft en dan een aantal keer op de knop "Draagt masker klikt", worden er ook foto's gemaakt wanneer de gebruiker wel een masker op heeft. 
+                            Vervolgens kan er op de knop "TRAIN" geklikt worden, zodat de AI getraind wordt. 
+                            De AI zal vervolgens in de zwarte balk aangeven of de gebruiker voor de camera nu wel of geen masker draagt.
+                        </p>
+                        <a href="https://quintyhr.github.io/Pro-8/Week%202%20Trainer/index.html" target="_blank">Draagt wel of geen mondkapje</a>
+                    </div>
+                </div>
 
-            </br>
-            </br>
-                <h3>Finger Tracker</h3>
-                <p>
-                    Een andere applicatie met een camera die ik gemaakt heb, is over het tracken van uw hand en dat de AI ziet welke vinger u momenteel opsteekt. 
-                    Deze pagina duurt iets langer om te laden, maar eenmaal de camera in beeld, dan kunt u zien dat er punten verschijnen op de plek van uw vingerkootjes wat de AI aan het tracken is. 
-                    Onder de plek van de camera wordt dan geplaatst welke vinger er opgestoken wordt. 
-                </p>
-                <a href="https://quintyhr.github.io/Pro-8/Week%203%20Inleveropdracht/index.html" target="_blank">Welke vinger steek ik op?</a>
+                <div class="box">
+                    <div class="image-box">
+                        <img src="./images/finger.PNG">
+                    </div>
+                    <div class="text-box">
+                        <h3>Finger Tracker</h3>
+                        <p>
+                            Een andere applicatie met een camera die ik gemaakt heb, is over het tracken van uw hand en dat de AI ziet welke vinger u momenteel opsteekt. 
+                            Deze pagina duurt iets langer om te laden, maar eenmaal de camera in beeld, dan kunt u zien dat er punten verschijnen op de plek van uw vingerkootjes wat de AI aan het tracken is. 
+                            Onder de plek van de camera wordt dan geplaatst welke vinger er opgestoken wordt. 
+                        </p>
+                        <a href="https://quintyhr.github.io/Pro-8/Week%203%20Inleveropdracht/index.html" target="_blank">Welke vinger steek ik op?</a>
+                    </div>
+                </div>
 
-            </br>
-            </br>
-                <h3>Handgebaren</h3>
-                <p>
-                    Vervolgens heb ik deze vorige twee opdrachten gecombineerd met dat u de AI nu bijvoorbeeld een handgebaar kunt laten leren, de AI vervolgens traind en dat u dus weer terug krijgt welk gebaar er gemaakt wordt. 
-                    Zo kun je bijvoorbeeld echte handgebaren erin zetten, of iets simpelers zoals steen papier schaar. 
-                    Door een gebaar te maken, het een naam te geven en een paar keer op "Train" te klikken en dit te herhalen voor een aantal gebaren, kunt u daarna een gebaar maken en vervolgens op "Classify" klikken en de AI zal eronder vermelden wat het is. 
-                </p>
-                <a href="https://quintyhr.github.io/Pro-8/Week%204%20Praktijk/index.html" target="_blank">Welk gebaar maak ik?</a>
+                <div class="box">
+                    <div class="image-box">
+                        <img src="./images/hand.PNG">
+                    </div>
+                    <div class="text-box">
+                        <h3>Handgebaren</h3>
+                        <p>
+                            Vervolgens heb ik deze vorige twee opdrachten gecombineerd met dat u de AI nu bijvoorbeeld een handgebaar kunt laten leren, de AI vervolgens traind en dat u dus weer terug krijgt welk gebaar er gemaakt wordt. 
+                            Zo kun je bijvoorbeeld echte handgebaren erin zetten, of iets simpelers zoals steen papier schaar. 
+                            Door een gebaar te maken, het een naam te geven en een paar keer op "Train" te klikken en dit te herhalen voor een aantal gebaren, kunt u daarna een gebaar maken en vervolgens op "Classify" klikken en de AI zal eronder vermelden wat het is. 
+                        </p>
+                        <a href="https://quintyhr.github.io/Pro-8/Week%204%20Praktijk/index.html" target="_blank">Welk gebaar maak ik?</a>
+                    </div>
+                </div>
 
-            </br>
-            </br>
-                <h3>Decisiontree</h3>
-                <p>
-                    Een ander onderdeel van ML5 is K Nearest Neighbour en de decisiontree. 
-                    Met K Nearest Neighbour heb ik een AI gegenereerde decisiontree gemaakt aan de hand van een dataset. 
-                    Dit heb ik toegepast op een dataset van mensen die wel of geen diabtes hebben. 
-                    Door de decisiontree te volgen kunt u erachter komen of u misschien wel of geen diabetes hebt. 
-                    Het programma is echter niet altijd correct, dus onder de decisiontree laat ik ook zien wat het programma goed heeft en hoeveel die er naast zat aan de hand van de trainingsdata. 
-                </p>
-                <a href="https://quintyhr.github.io/Pro-8/Week%205/" target="_blank">Diabetes aan de hand van een decisiontree</a>
+                <div class="box">
+                    <div class="image-box">
+                        <img src="./images/diabetes.PNG">
+                    </div>
+                    <div class="text-box">
+                        <h3>Decisiontree</h3>
+                        <p>
+                            Een ander onderdeel van ML5 is K Nearest Neighbour en de decisiontree. 
+                            Met K Nearest Neighbour heb ik een AI gegenereerde decisiontree gemaakt aan de hand van een dataset. 
+                            Dit heb ik toegepast op een dataset van mensen die wel of geen diabtes hebben. 
+                            Door de decisiontree te volgen kunt u erachter komen of u misschien wel of geen diabetes hebt. 
+                            Het programma is echter niet altijd correct, dus onder de decisiontree laat ik ook zien wat het programma goed heeft en hoeveel die er naast zat aan de hand van de trainingsdata. 
+                        </p>
+                        <a href="https://quintyhr.github.io/Pro-8/Week%205/" target="_blank">Diabetes aan de hand van een decisiontree</a>
+                    </div>
+                </div>
 
-            </br>
-            </br>
-                <h3>Hoeveel emissie</h3>
-                <p>
-                    De laatste opdracht die ik met Machine Learning gemaakt heb, heb ik gemaakt met Neural Networks. 
-                    Deze opdracht heb ik ook deels gemaakt voor een project waar ik in teamverband mee bezig was op mijn opleiding. 
-                    Hiervoor heb ik een dataset opgezocht over de uitstoot van auto's en wilde een website maken die vervolgens kan voorspellen wat de uitstoot is van de auto van de gebruiker. 
-                    Door op onderstaande website de gegevens van uw auto in te vullen kunt erachter komen wat de uitstoot is van uw auto. 
-                    De website is nog een work in progress en kwam er met user testing ook achter dat er nog een aantal aanpassingen gedaan moet worden. 
-                    Zo is weet de doelgroep niet wat hun verbruik in mpg is, dat Liter per 100km beter omgezet in km per Liter kan worden en dat ze geen idee hebben hoeveel cylinders hun auto heeft. 
-                </p>
-                <a href="https://quintyhr.github.io/Pro-8/Week%209/" target="_blank">Uitstoot van een auto voorspellen</a>
+                <div class="box">
+                    <div class="image-box">
+                        <img src="./images/predictEmission.PNG">
+                    </div>
+                    <div class="text-box">
+                        <h3>Hoeveel emissie</h3>
+                        <p>
+                            De laatste opdracht die ik met Machine Learning gemaakt heb, heb ik gemaakt met Neural Networks. 
+                            Deze opdracht heb ik ook deels gemaakt voor een project waar ik in teamverband mee bezig was op mijn opleiding. 
+                            Hiervoor heb ik een dataset opgezocht over de uitstoot van auto's en wilde een website maken die vervolgens kan voorspellen wat de uitstoot is van de auto van de gebruiker. 
+                            Door op onderstaande website de gegevens van uw auto in te vullen kunt erachter komen wat de uitstoot is van uw auto. 
+                            De website is nog een work in progress en kwam er met user testing ook achter dat er nog een aantal aanpassingen gedaan moet worden. 
+                            Zo is weet de doelgroep niet wat hun verbruik in mpg is, dat Liter per 100km beter omgezet in km per Liter kan worden en dat ze geen idee hebben hoeveel cylinders hun auto heeft. 
+                        </p>
+                        <a href="https://quintyhr.github.io/Pro-8/Week%209/" target="_blank">Uitstoot van een auto voorspellen</a>
+                    </div>
+                </div>
             </section>
         </section>
 
@@ -209,8 +229,8 @@
         </section>
     </main>
 
-    <footer class="bg-gray-700 text-center lg:text-left">
-        <div class="text-gray-300 text-center p-4" style="background-color: rgb(55 65 81);">
+    <footer class="text-center lg:text-left">
+        <div class="text-white text-center p-4">
           Quinty de Jong
         </div>
     </footer>
