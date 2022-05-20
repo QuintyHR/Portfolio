@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./dist/output.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Portfolio Quinty de Jong</title>
 </head>
 <body>
@@ -13,18 +14,32 @@
         <nav class="flex items-center justify-between flex-wrap p-6">
             <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
                 <div class="text-sm lg:flex-grow">
-                    <a id="about-button" href="#about" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-4">
-                        Over mij
-                    </a>
-                    <a id="study-button" href="#study" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-4">
-                        Opleiding
-                    </a>
-                    <a id="projects-button" href="#projects" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-4">
-                        Projecten
-                    </a>
-                    <a id="more-button" href="#more" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white">
-                        Andere ervaring
-                    </a>
+                    <div class="subnav">
+                        <button class="subnav-button" id="about-button" href="#about" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-4">Over mij</button>
+                    </div>
+                    <div class="subnav">
+                        <button class="subnav-button" id="study-button" href="#study" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-4">Opleiding</button>
+                    </div>
+                    <div class="subnav">
+                        <button class="subnav-button" id="study-button" href="#study" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-4">Projecten <i class="fa fa-caret-down"></i></button>
+                        <div class="subnav-content">
+                          <a href="#front-back" id="front-back-button">Front-end en Back-end</a>
+                          <a href="#webshop" id="webshop-button">Webshop voor opdrachtgever</a>
+                          <a href="#game" id="game-button">Web game</a>
+                          <a href="#laravel" id="laravel-button">Laravel</a>
+                          <a href="#ml" id="ml-button">Machine Learning</a>
+                          <a href="#mask" id="mask-button">Wel of geen mondkapje?</a>
+                          <a href="#finger" id="finger-button">Finger Tracker</a>
+                          <a href="#hand" id="hand-button">Handgebaren</a>
+                          <a href="#diabetes" id="diabetes-button">Diabetes</a>
+                          <a href="#emission" id="emission-button">Hoeveel emissie</a>
+                          <a href="#extra" id="extra-button">Overig</a>
+                          <a href="#route" id="route-button">Routeplanner</a>
+                        </div>
+                    </div>
+                    <div class="subnav">
+                        <button class="subnav-button" id="more-button" href="#more" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-4">Andere ervaring</button>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -35,29 +50,43 @@
     <main>
         <section id="about" class="">
             <h2 class="text-2xl font-bold">Over mij</h2>
-            <p>
-                Mijn naam is Quinty de Jong, ik ben 19 jaar oud en studeer Creative Media and Game Technologies aan de Hogeschool Rotterdam.
-                Mijn hobby's zijn gamen, knutselen en het maken van cosplays. 
-            </p>
+            <div class="box-alter">
+                <div class="image-box-alter">
+                    <img src="./images/photoMe.PNG">
+                </div>
+                <div class="text-box-alter">
+                    <p>
+                        Mijn naam is Quinty de Jong, ik ben 19 jaar oud en studeer Creative Media and Game Technologies aan de Hogeschool Rotterdam.
+                        Mijn hobby's zijn gamen, knutselen en het maken van cosplays. 
+                    </p>
+                </div>
+            </div>
         </section>
 
         </br>
 
         <section id="study" class="">
             <h2 class="text-2xl font-bold">Opleiding</h2>
-            <p>Momenteel volg ik de opleiding Creative Media & Game Technologies aan de Hogeschool Rotterdam.
-                Deze opleiding is over het algemeen veel programmeren van bijvoorbeeld websites, AI, games en apps. 
-                Tot nu toe heb ik al ervaring met: HTML, CSS, Javascript, Typescript, JSON, node.js, PHP, Linux, React Native, ML5, K nearest neighbour en NeuralNetworks. 
-                Ook heb ik al een klein beetje gewerkt met de frameworks Laravel, React, Bootstrap en Tailwind. 
-            </p>
-        </br> 
-            <p>
-                Naast mijn huidige opleiding heb ik op de misselbare school het VWO niveau gedaan en heb daar het Technasium gevolgd in combinatie met het vak Informatica. 
-                Het Technasium houdt in dat ik het in plaats van bijvoorbeeld Grieks, het vak O&O had. 
-                O&O staat voor Onderzoeken & Ontwerpen en in dat vak leer je te werken voor opdrachtgevers en technische opdrachten uit te werken. 
-                Zo heb ik onder andere een geautomatiseerde garderobe voor een theater ontwikkeld en een nieuw gebouw ontworpen voor een speciale afdeling van de Politie Academie. 
-                Ik heb met name hier geleerd hoe ik onderzoek moet doen en hoe ik dat moet toepassen op wensen van de opdrachtgever en de uiteindelijke gebruikers ervan. 
-            </p>
+            <div class="box-alter">
+                <div class="image-box-alter">
+                    <img src="./images/HR.png">
+                </div>
+                <div class="text-box-alter">
+                    <p>Momenteel volg ik de opleiding Creative Media & Game Technologies aan de Hogeschool Rotterdam.
+                        Deze opleiding is over het algemeen veel programmeren van bijvoorbeeld websites, AI, games en apps. 
+                        Tot nu toe heb ik al ervaring met: HTML, CSS, Javascript, Typescript, JSON, node.js, PHP, Linux, React Native, ML5, K nearest neighbour en NeuralNetworks. 
+                        Ook heb ik al een klein beetje gewerkt met de frameworks Laravel, React, Bootstrap en Tailwind. 
+                    </p>
+                </br> 
+                    <p>
+                        Naast mijn huidige opleiding heb ik op de misselbare school het VWO niveau gedaan en heb daar het Technasium gevolgd in combinatie met het vak Informatica. 
+                        Het Technasium houdt in dat ik het in plaats van bijvoorbeeld Grieks, het vak O&O had. 
+                        O&O staat voor Onderzoeken & Ontwerpen en in dat vak leer je te werken voor opdrachtgevers en technische opdrachten uit te werken. 
+                        Zo heb ik onder andere een geautomatiseerde garderobe voor een theater ontwikkeld en een nieuw gebouw ontworpen voor een speciale afdeling van de Politie Academie. 
+                        Ik heb met name hier geleerd hoe ik onderzoek moet doen en hoe ik dat moet toepassen op wensen van de opdrachtgever en de uiteindelijke gebruikers ervan. 
+                    </p>
+                </div>
+            </div>
         </section>
 
         </br>
@@ -68,9 +97,16 @@
                 Met zowel met mijn opleiding als middelbare school heb ik al aardig wat ervaring nu met programmeren en ook al aardig wat projecten gehad. 
                 Hieronder staan een paar van mijn projecten. Een paar hiervan staan ook online en hebben er dan ook een link eronder staan. 
             </p>
+            <br>
+            <br>
 
-            <section>
-                <div class="box">
+            <section id="front-back">
+                <h2 class="text-2xl font-bold mt-4">Front-end en back-end</h2>
+                <p>
+                    Eerst heb ik hier een paar projecten staan die volledig gecentreerd staan rond de front-end en back-end kant van het programmeren wat intussen op school geleerd heb. 
+
+                </p>
+                <div id="webshop" class="box">
                     <div class="image-box">
                         <img src="./images/webshop.PNG">
                     </div>
@@ -83,28 +119,27 @@
                             Die uitdaging heb ik toen ook met beide handen aangepakt, omdat ik het ook leuk vind om mezelf uit te dagen en wat extra's te leren. 
                             
                         </p>
+                        <br>
                         <a href="https://stud.hosted.hr.nl/1019766/webshop/" target="_blank">Webshop voor een opdrachtgever</a>
                     </div>
                 </div>
-            </section>
-
-            <section>
-                <div class="box">
+            
+                <div id="game" class="box">
                     <div class="image-box">
                         <img src="./images/dragonGame.PNG">
                     </div>
                     <div class="text-box">
-                        <h2 class="text-2xl font-bold">Dragon Game</h2>
+                        <h2 class="text-2xl font-bold">Web Game</h2>
                         <p>
-                            Aan het einde van het eerste jaar heb ik met behulp van Javascript ook nog een simpele game gemaakt. 
+                            Aan het einde van het eerste jaar heb ik met behulp van Javascript ook nog een simpele webgame gemaakt. 
+                            
                         </p>
-                        <a href="https://stud.hosted.hr.nl/1019766/Elemental-Dragons/docs/" target="_blank">Dragon Game</a>
+                        <br>
+                        <a href="https://stud.hosted.hr.nl/1019766/Elemental-Dragons/docs/" target="_blank" class="hover:text-white">Web Game</a>
                     </div>
                 </div>
-            </section>
-
-            <section>
-                <div class="box">
+            
+                <div id="laravel" class="box">
                     <div class="image-box">
                         <img src="./images/laravel.PNG">
                     </div>
@@ -125,19 +160,20 @@
 
         </br>
 
-            <section>
+            <section id="ml">
                 <h2 class="text-2xl font-bold">Machine Learning</h2>
                 <p>
                     In het tweede jaar van mijn opleiding hebben we onder andere ook Machine Learning gehad. 
                     Hier heb ik zelf heel erg veel verschillende onderdelen in gehad en zal een link zetten naar elk onderdeel. 
                 </p>
 
-                <div class="box">
+                <div id="mask" class="box">
                     <div class="image-box">
                         <img src="">
                     </div>
                     <div class="text-box">
-                        <h3>Wel of geen mondkapje?</h3>
+                        <br>
+                        <h2 class="text-2xl font-bold">Wel of geen mondkapje?</h2>
                         <p>
                             Het eerste onderdeel wat ik gedaan heb is het trainen van AI met behulp van een camera (in dit geval een webcam).
                             Dit heb ik gedaan met ML5. 
@@ -147,46 +183,51 @@
                             Vervolgens kan er op de knop "TRAIN" geklikt worden, zodat de AI getraind wordt. 
                             De AI zal vervolgens in de zwarte balk aangeven of de gebruiker voor de camera nu wel of geen masker draagt.
                         </p>
+                        <br>
                         <a href="https://quintyhr.github.io/Pro-8/Week%202%20Trainer/index.html" target="_blank">Draagt wel of geen mondkapje</a>
+                        <br>
+                        <br>
                     </div>
                 </div>
 
-                <div class="box">
+                <div id="finger" class="box">
                     <div class="image-box">
                         <img src="./images/finger.PNG">
                     </div>
                     <div class="text-box">
-                        <h3>Finger Tracker</h3>
+                        <h2 class="text-2xl font-bold">Finger Tracker</h2>
                         <p>
                             Een andere applicatie met een camera die ik gemaakt heb, is over het tracken van uw hand en dat de AI ziet welke vinger u momenteel opsteekt. 
                             Deze pagina duurt iets langer om te laden, maar eenmaal de camera in beeld, dan kunt u zien dat er punten verschijnen op de plek van uw vingerkootjes wat de AI aan het tracken is. 
                             Onder de plek van de camera wordt dan geplaatst welke vinger er opgestoken wordt. 
                         </p>
+                        <br>
                         <a href="https://quintyhr.github.io/Pro-8/Week%203%20Inleveropdracht/index.html" target="_blank">Welke vinger steek ik op?</a>
                     </div>
                 </div>
 
-                <div class="box">
+                <div id="hand" class="box">
                     <div class="image-box">
                         <img src="./images/hand.PNG">
                     </div>
                     <div class="text-box">
-                        <h3>Handgebaren</h3>
+                        <h2 class="text-2xl font-bold">Handgebaren</h2>
                         <p>
                             Vervolgens heb ik deze vorige twee opdrachten gecombineerd met dat u de AI nu bijvoorbeeld een handgebaar kunt laten leren, de AI vervolgens traind en dat u dus weer terug krijgt welk gebaar er gemaakt wordt. 
                             Zo kun je bijvoorbeeld echte handgebaren erin zetten, of iets simpelers zoals steen papier schaar. 
                             Door een gebaar te maken, het een naam te geven en een paar keer op "Train" te klikken en dit te herhalen voor een aantal gebaren, kunt u daarna een gebaar maken en vervolgens op "Classify" klikken en de AI zal eronder vermelden wat het is. 
                         </p>
+                        <br>
                         <a href="https://quintyhr.github.io/Pro-8/Week%204%20Praktijk/index.html" target="_blank">Welk gebaar maak ik?</a>
                     </div>
                 </div>
 
-                <div class="box">
+                <div id="diabetes" class="box">
                     <div class="image-box">
                         <img src="./images/diabetes.PNG">
                     </div>
                     <div class="text-box">
-                        <h3>Decisiontree</h3>
+                        <h2 class="text-2xl font-bold">Diabetes</h2>
                         <p>
                             Een ander onderdeel van ML5 is K Nearest Neighbour en de decisiontree. 
                             Met K Nearest Neighbour heb ik een AI gegenereerde decisiontree gemaakt aan de hand van een dataset. 
@@ -194,16 +235,18 @@
                             Door de decisiontree te volgen kunt u erachter komen of u misschien wel of geen diabetes hebt. 
                             Het programma is echter niet altijd correct, dus onder de decisiontree laat ik ook zien wat het programma goed heeft en hoeveel die er naast zat aan de hand van de trainingsdata. 
                         </p>
+                        <br>
                         <a href="https://quintyhr.github.io/Pro-8/Week%205/" target="_blank">Diabetes aan de hand van een decisiontree</a>
                     </div>
                 </div>
 
-                <div class="box">
+                <div id="emission" class="box">
                     <div class="image-box">
                         <img src="./images/predictEmission.PNG">
                     </div>
                     <div class="text-box">
-                        <h3>Hoeveel emissie</h3>
+                        <br>
+                        <h2 class="text-2xl font-bold">Hoeveel emissie</h2>
                         <p>
                             De laatste opdracht die ik met Machine Learning gemaakt heb, heb ik gemaakt met Neural Networks. 
                             Deze opdracht heb ik ook deels gemaakt voor een project waar ik in teamverband mee bezig was op mijn opleiding. 
@@ -212,7 +255,26 @@
                             De website is nog een work in progress en kwam er met user testing ook achter dat er nog een aantal aanpassingen gedaan moet worden. 
                             Zo is weet de doelgroep niet wat hun verbruik in mpg is, dat Liter per 100km beter omgezet in km per Liter kan worden en dat ze geen idee hebben hoeveel cylinders hun auto heeft. 
                         </p>
+                        <br>
                         <a href="https://quintyhr.github.io/Pro-8/Week%209/" target="_blank">Uitstoot van een auto voorspellen</a>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </section>
+
+            <section id="extra">
+                <div class="box">
+                    <div class="image-box">
+                        <img src="">
+                    </div>
+                    <div id="route" class="text-box">
+                        <h2 class="text-2xl font-bold">Routeplanner</h2>
+                        <p>
+                            Momenteel ben ik ook weer bezig met een project voor school. 
+                            Voor dit project moeten we iets bedenken en maken met AI waarmee we de stad Rotterdam duurzamer mee kunnen maken. 
+
+                        </p>
                     </div>
                 </div>
             </section>
@@ -231,11 +293,28 @@
 
     <footer class="text-center lg:text-left">
         <div class="text-white text-center p-4">
-          Quinty de Jong
+            <p>Quinty de Jong</p>
+        </div>
+        <div class="text-white text-center p-4">
+            <a href="mailto:quintybodegraven@gmail.com">quintybodegraven@gmail.com</a>
+        </div>
+        <div class="text-white text-center p-4">
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/RaisaNM">
+                        <i class="fa-brands fa-github-square"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/raisa-mahesvara-niadilova-1b275220a/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
     </footer>
 </body>
 
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 
 </html>
