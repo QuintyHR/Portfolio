@@ -157,6 +157,22 @@ a {
     flex: 1;
 }
 
+#footer-icons {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer-icons-github {
+    padding-right: 25px;
+}
+
+#footer-icons-linkedin {
+    padding-left: 25px;
+}
+
 @media screen and (max-width: 1000px) {
     .subnav {
         float: none;
