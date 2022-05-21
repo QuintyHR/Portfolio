@@ -87,7 +87,7 @@ section {
 }
 
 footer {
-    margin-top: 10px;
+    margin-top: 25px;
     width: 100%;
     height: 100%;
     background-color: rgb(108, 60, 132);
@@ -117,6 +117,10 @@ a {
     padding: 10px;
     background-color: rgb(108, 60, 132);
     color: rgb(224, 240, 253);
+}
+
+#link-mail:hover {
+    color: white;
 }
 
 .box {
@@ -157,8 +161,33 @@ a {
     flex: 1;
 }
 
-#footer-icons {
+#link-mail {
+    margin: 0;
+    padding: 0;
+}
+
+#gallery {
     margin: 20px;
+    line-height:0;
+    -webkit-column-count:5; /* split it into 5 columns */
+    -webkit-column-gap:5px; /* give it a 5px gap between columns */
+    -moz-column-count:5;
+    -moz-column-gap:5px;
+    column-count:5;
+    column-gap:5px;
+}
+
+#gallery img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom:5px; /* to match column gap */
+}
+
+#gallery img:hover {
+    filter:none;
+}
+
+#footer-icons {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -171,6 +200,14 @@ a {
 
 #footer-icons-linkedin {
     padding-left: 25px;
+}
+
+@media (max-width: 1200px) {
+    #gallery {
+     -moz-column-count:    4;
+     -webkit-column-count: 4;
+     column-count:         4;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -192,5 +229,27 @@ a {
         margin: 20px;
         display: flex;
         flex-direction: column;
+    }
+
+    #gallery {
+        -moz-column-count:    3;
+        -webkit-column-count: 3;
+        column-count:         3;
+    }
+}
+
+@media (max-width: 800px) {
+    #gallery {
+     -moz-column-count:    2;
+     -webkit-column-count: 2;
+     column-count:         2;
+    }
+}
+
+@media (max-width: 400px) {
+    #gallery {
+     -moz-column-count:    1;
+     -webkit-column-count: 1;
+     column-count:         1;
     }
 }
